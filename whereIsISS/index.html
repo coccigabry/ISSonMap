@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <style>
+        #map {
+            height: 350px;
+            width: 700px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <h1>Where is the ISS now?</h1>
+        <div>
+            <span
+                style="font-size: 18px; font-weight: 600; text-decoration: underline; margin-right: 28px;">Latitude:</span>
+            <span class="lat">Loading data...</span>
+        </div>
+        <div>
+            <span
+                style="font-size: 18px; font-weight: 600; text-decoration: underline; margin-right: 15px;">Longitude:</span>
+            <span class="long">Loading data...</span>
+        </div>
+        <div>
+            <span
+                style="font-size: 18px; font-weight: 600; text-decoration: underline; margin-right: 32px;">Altitude:</span>
+            <span class="alt">Loading data...</span>
+        </div>
+        <div>
+            <span
+                style="font-size: 18px; font-weight: 600; text-decoration: underline; margin-right: 34px;">Velocity:</span>
+            <span class="vel">Loading data...</span>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
